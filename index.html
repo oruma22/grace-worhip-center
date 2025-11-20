@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Worship Center | The Ark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              grace: {
+                gold: '#D4AF37',
+                'gold-light': '#F3E5AB',
+                'gold-dim': '#8C7324',
+                dark: '#020202',
+                'dark-800': '#0F0F0F',
+                'dark-700': '#1A1A1A',
+                fire: '#E85D04',
+                'fire-dark': '#9D0208',
+                purple: '#240046',
+                'purple-light': '#5A189A',
+                light: '#F8FAFC'
+              }
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'fire-gradient': 'linear-gradient(to bottom, #000000, #370617, #6A040F, #9D0208, #D00000)',
+              'purple-gradient': 'radial-gradient(circle at center, #3C096C, #240046, #10002B)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020202;
+        color: #F8FAFC;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D4AF37;
+      }
+      .text-stroke {
+        -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+        color: transparent;
+      }
+      .text-stroke-gold {
+        -webkit-text-stroke: 1px #D4AF37;
+        color: transparent;
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(232, 93, 4, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
